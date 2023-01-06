@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@500&family=Julius+Sans+One&family=Jura:wght@500&family=Lora:ital@1&family=Martel:wght@300&family=Raleway:ital,wght@0,100;1,400&family=Rubik+Vinyl&family=Spectral:wght@300&family=Syncopate:wght@700&family=Unbounded:wght@300;400&family=Zen+Dots&display=swap" rel="stylesheet">
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>pizza shop</title>
+ <style type="text/css">
+  body{
+   margin: 0;
+  }
+  .conteiner{
+   width: 100%;
+   height: 817px;
+/*   background-color: #0E6655;*/
+   background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-gourmet-food-pizza-background-template-image_160185.jpg');
+   border: 1px solid;
+   padding: 10px;
+   position: relative;
+   object-fit: cover;
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+  P{
+   color: #e9f5da;
+   font-size: 100px;
+   position: absolute;
+   left: 37%;
+   top: 150px;
+   font-family: 'Cinzel', serif;
+   text-shadow: 1px 1px 10px white;
+   font-size: calc(25px + 55 * (100vw / 1280));
+  }
+  @media (max-width767px) {
+   p{
+    font-size:  calc(30px + (55 + 55 * 0.7) * ((100vw - 320px) / 1280)); ;
+   }
+  }
+  .text-2{
+   width: 290px;
+   height: 120px;
+   background-color: #e9f5da;
+   position: absolute;
+   left:75%;
+   top: 229px;
+   animation-name:text-2;
+   animation-duration: 4s;
+  }
+  
+
+  h3{
+   color: #e9f5da;
+   font-size: 45px;
+   position: absolute;
+   left: 28%;
+   top: 400px;
+   text-shadow: 1px 1px 20px darkred;
+   animation-name: text-3;
+   animation-duration: 2s;
+  }
+  
+
+  @keyframes text-3{
+   0%{
+    text-shadow: 0 0 0 #0E6655 ;
+    color: #0E6655;
+   }
+   50%{
+    text-shadow: 0 0 0 #0E6655 ;
+    color: #0E6655;
+   }
+   100%{
+    color: white;
+    text-shadow: 1px 1px 20px darkred ;
+   }
+  }
+
+  @keyframes text-2{
+   0%{
+    left: 55%;
+    top: 229px;
+   }
+   75%{
+    left: 75%;
+    top: 229px;
+   }
+   100%{
+    width: 100px;
+    height: 30px;
+   }
+
+   
+  }
+  .white-circle{
+   width: 160px;
+   height: 160px;
+   position: relative;
+   left: 50%;
+   top: -70px ;
+   transform: translateX(-50%);
+  }
+  .circle-pizza{
+   width: 360px;
+   height: 360px;
+   border-radius: 100%;
+   position: absolute;
+   left: -100px;
+   top: -100px;
+   object-fit: cover ;
+   animation-name: foto;
+   animation-duration: 20s;
+   animation-iteration-count: infinite; 
+  }
+  @keyframes foto{
+   0%{
+    transform: rotate(0deg);
+   }
+   100%{
+    transform: rotate(360deg);
+   }
+   
+  }
+  .main-box{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+  }
+  .box{
+   width: 500px;
+   height: 600px;
+   border: 3px solid #0E6655;
+   margin: 4%;
+   margin-top: 120px;
+   border-radius: 10px; 
+   overflow: hidden;
+   position: relative;
+  }
+  .box:hover{
+   box-shadow: 3px 4px 5px 6px gray;
+  }
+  
+  .box:hover .pizza{
+   left: -1px;
+  }
+  h1{
+   position: absolute;
+   top: 20px;
+   left: 270px;
+   color: darkred;
+  }
+  h2{
+   position: absolute;
+   top: 95px;
+   left: 240px;
+  }
+  b{
+   position: absolute;
+   left: 300px;
+   top: 420px;
+   font-size: 30px;
+   color: darkred ;
+   font-size: 40px;
+  }
+  button{
+   width: 180px;
+   height:50px ;
+   background-color: #0E6655 ;
+   color: white;
+   text-align: center;
+   font-size: 30px;
+   border-radius: 15px;
+   border: 1px solid white;
+   position: relative;
+   top:530px;
+   left: 260px;
+  }
+  .icon{
+   width: 90px;
+   height: 25px;
+   border-radius: 40px;
+   background-color: red;
+   color: white;
+   position: absolute;
+   top: 35px;
+   left: 430px;
+   text-align: center;
+   font-size: 23px;
+   padding: 10px;
+  }
+
+  .pizza{
+   position: absolute;
+   width:575px;
+   height: 600px;
+   border-radius: 15px;
+   left: -350px;
+   transition: 8s;
+   top: 3px;
+   object-fit: cover;
+   background-repeat: no-repeat;
+   box-shadow: 3px 4px 5px 6px gray;
+   background-color: white;
+  }
+  .icon-2{
+   width: 90px;
+   height: 25px;
+   border-radius: 40px;
+   background-color: #5DADE2;
+   color: white;
+   position: absolute;
+   top: 35px;
+   left: 430px;
+   text-align: center;
+   font-size: 23px;
+   padding: 10px;
+  }
+  .lastbox{
+   width: auto;
+   height: 6%;
+   background-color:#0E6655 ;
+   padding: 2px;
+  
+   
+  }
+  .last{
+   font-size: 25px;
+   text-align: center;
+   color:#7B0F08 ;
+   text-shadow: 1px 1px 10px white;
+  }
+
+</style>
+</head>
+<body>
+ <div class="conteiner">
+  <p>PizzBurg</p>
+  <h3>Доставка по городу: роллы, суши, пицца</h3>
+
+ </div>
+ <div class="white-circle">
+  <img class="circle-pizza" src="https://img.freepik.com/premium-photo/isolated-pepperoni-pizza-with-salami_219193-8159.jpg?w=2000"> 
+ </div>
+ <div class="main-box">
+  <div class="box">
+   <div class="text">
+    <h1>Четыре Сыра</h1>
+    <h2> Моцарелла, сыры чеддер и пармезан, сыр блю чиз, соус альфредо</h2>
+    <b>475 c</b>
+    <button>заказать</button>
+   </div>
+   <div class="pizza" style="background-image:url(https://dodopizza-a.akamaihd.net/static/Img/Products/02dc29c27c294172839bcee0f06cb4db_584x584.webp)">
+    <div class="icon">NEW</div>
+   </div>
+  </div>
+  <div class="box">
+   <div class="text">
+    <h1>Куриная пицца</h1>
+    <h2>Картофель из печи, соленые огурчики, цыпленок, соус ранч, томаты, моцарелла, томатный соус</h2>
+    <b>445 c</b>
+    <button>заказать</button>
+   </div>
+   <div class="pizza" style="background-image:url(https://dodopizza-a.akamaihd.net/static/Img/Products/596181578602410dbd9e9f75d66ee61d_584x584.webp)">
+   </div>
+  </div>
+  <div class="box">
+   <div class="text">
+    <h1>PaPA Johns</h1>
+    <h2>Ветчина из цыпленка, пепперони из цыпленка, моцарелла, шампиньоны,томатный соус,томаты, фарш из говядины</h2>
+    <b>470 c</b>
+    <button>заказать</button>
+   </div>
+   <div class="pizza" style="background-image: url(https://dodopizza-a.akamaihd.net/static/Img/Products/ada478de4d6a466aa049f59b4656a781_584x584.webp);">
+    <div class="icon-2">2 B 1</div>
+   </div>
+  </div>
+  <div class="box">
+   <div class="text">
+    <h1>Пепперони</h1>
+    <h2>Пепперони из цыпленка, моцарелла, томатный соус</h2>
+    <b>480 c</b>
+    <button>заказать</button>
+   </div>
+   <div class="pizza" style="background-image:url(https://dodopizza-a.akamaihd.net/static/Img/Products/2689742f19fb43cf810dc802aaeaa801_584x584.webp);">
+    <div class="icon">NEW</div>
+   </div>
+  </div>
+
+
+<div class="box">
+   <div class="text"></div>
+    <h1> Sprite </h1>
+    <h2>Если напиток очень хорош,то его тянет выпить залпом.</h2>
+    <b>80 c</b>
+    <button>заказать</button>
+   <div class="pizza" style="background-image:url(https://cdn.shopify.com/s/files/1/0060/6067/1058/products/SpriteSleek330mlx6pack_grande.jpg?v=1587999448);"></div>
+  </div>
+  <div class="box">
+   <div class="text"></div>
+    <h1>Coca Cola</h1>
+    <h2>Без хорошего напитка и праздник – не праздник...</h2>
+    <b>80 c</b>
+    <button>заказать</button>
+   <div class="pizza" style="background-image:url(https://cdn.shopify.com/s/files/1/0060/6067/1058/products/CokeZeroSleek330mlx6pack_grande.jpg?v=1587998497);"></div>
+  </div>
+  <div class="box">
+   <div class="text"></div>
+    <h1>StrawBerry Shake</h1>
+    <h2>Молоко, печенье, сироп, сливки</h2>
+    <b>200 c</b>
+    <button>заказать</button>
+   <div class="pizza" style="background-image:url(https://i.pinimg.com/564x/08/ad/1f/08ad1fee77e8ecddb7871032cff477da.jpg);"></div>
+  </div>
+  <div class="box">
+   <div class="text"></div>
+    <h1>The Yard Mintshake</h1>
+    <h2>Шоколад, молоко, печенье, мята, мороженое </h2>
+    <b>200 c </b>
+    <button>заказать</button>
+   <div class="pizza" style="background-image:url(https://i.pinimg.com/564x/59/25/3a/59253aae8af3926f3ad74ae006ce53a1.jpg);"></div>
+  </div>
+ </div>
+ <div class="lastbox">
+  <h4 class="last">Сайт разработан Besoft Teach @ OcOO "Besoft Teach"</h4>
+ </div>
+</body>
+</html>
